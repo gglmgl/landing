@@ -476,7 +476,7 @@ body {
 }
 
 .slider-key-features {
-  padding-bottom: 116px;
+  //padding-bottom: 116px;
   @media (min-width: $media-screen-tablet) {
     padding-bottom: 60px;
   }
@@ -487,6 +487,23 @@ body {
     display: none;
     @media (min-width: $media-screen-tablet) {
       display: block;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 84px;
+        height: 101px;
+        right: -8px;
+        top: 50%;
+        z-index: 1;
+        transform: translateY(-50%);
+        background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 142.62%);
+      }
+    }
+    @media (min-width: $media-screen-desktop) {
+      &::before {
+        content: none;
+      }
     }
   }
   .slider-key-features__navigation-item {
@@ -880,7 +897,7 @@ body {
     @media (min-width: $media-screen-phone) {
       padding: 52px 24px;
     }
-    @media (min-width: $media-screen-phone) {
+    @media (min-width: $media-screen-tablet) {
       padding: 80px;
     }
     @media (min-width: $media-screen-desktop) {
@@ -924,6 +941,13 @@ body {
         background-image: url("../img/dsp-landing/solution-arrow.svg");
       }
     }
+
+    .title-indent {
+      display: block;
+      @media (min-width: $media-screen-tablet) {
+        display: inline;
+      }
+    }
   }
 
   .section-description {
@@ -956,7 +980,7 @@ body {
     @media (min-width: $media-screen-phone) {
       padding: 56px 24px;
     }
-    @media (min-width: $media-screen-phone) {
+    @media (min-width: $media-screen-tablet) {
       padding: 100px 46px;
     }
     @media (min-width: $media-screen-desktop) {
@@ -1022,9 +1046,9 @@ body {
   .features-slider-navigation--mobile {
     display: block;
     margin-top: 32px;
+    text-align: center;
     @media (min-width: $media-screen-tablet) {
       margin-top: 0;
-      text-align: center;
     }
     @media (min-width: $media-screen-desktop) {
       display: none;
@@ -1065,8 +1089,10 @@ body {
   .timeline-carousel {
     .slick-list.draggable {
       box-shadow: 0 0 20px rgba(148, 161, 170, 0.2);
+      border-radius: 16px;
       @media (min-width: $media-screen-tablet) {
         box-shadow: none;
+        border-radius: 0;
       }
     }
 
@@ -1765,7 +1791,7 @@ body {
       &::before {
         position: absolute;
         content: "";
-        top: -4px;
+        top: -2px;
         left: 0;
         width: 26px;
         height: 26px;
@@ -1775,9 +1801,6 @@ body {
           width: 32px;
           height: 32px;
         }
-        @media (min-width: $media-screen-desktop) {
-          top: -2px;
-        }
       }
     }
 
@@ -1785,13 +1808,9 @@ body {
       margin-bottom: 2px;
       font-family: $gilroy-font;
       font-weight: 600;
-      font-size: 14px;
-      line-height: 21px;
+      font-size: 18px;
+      line-height: 26px;
       color: $title-color;
-      @media (min-width: $media-screen-tablet) {
-        font-size: 18px;
-        line-height: 26px;
-      }
       @media (min-width: $media-screen-desktop) {
         font-size: 20px;
         line-height: 28px;
@@ -1800,13 +1819,9 @@ body {
 
     .section-list-description {
       font-family:$open-sans;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 14px;
+      line-height: 21px;
       color: $text-color;
-      @media (min-width: $media-screen-tablet) {
-        font-size: 14px;
-        line-height: 21px;
-      }
       @media (min-width: $media-screen-desktop) {
         font-size: 16px;
         line-height: 24px;
