@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy/Gilroy-Regular.eot');
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+  url('../fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+  url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy/Gilroy-Bold.eot');
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+  url('../fonts/Gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
+  url('../fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy/Gilroy-Black.eot');
+  src: local('Gilroy Black'), local('Gilroy-Black'),
+  url('../fonts/Gilroy/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Black.woff2') format('woff2'),
+  url('../fonts/Gilroy/Gilroy-Black.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy/Gilroy-Light.eot');
+  src: local('Gilroy Light'), local('Gilroy-Light'),
+  url('../fonts/Gilroy/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Light.woff2') format('woff2'),
+  url('../fonts/Gilroy/Gilroy-Light.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy/Gilroy-Semibold.eot');
+  src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+  url('../fonts/Gilroy/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Semibold.woff2') format('woff2'),
+  url('../fonts/Gilroy/Gilroy-Semibold.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy/Gilroy-Extrabold.eot');
+  src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+  url('../fonts/Gilroy/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Extrabold.woff2') format('woff2'),
+  url('../fonts/Gilroy/Gilroy-Extrabold.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans/OpenSans-Light.eot");
+  src:
+    url("../fonts/OpenSans/OpenSans-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans/OpenSans-Light.woff") format("woff"),
+    url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype")
+}
+
+
+@font-face {
+  font-weight:400;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot");
+  src:
+    url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype")
+}
+
+
+@font-face {
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans/OpenSans-SemiBold.eot");
+  src:
+    url("../fonts/OpenSans/OpenSans-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/OpenSans/OpenSans-SemiBold.woff") format("woff"),
+    url("../fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype")
+}
+
+
+@font-face {
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans/OpenSans-Bold.eot");
+  src:
+    url("../fonts/OpenSans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype")
+}
+
+
+@font-face {
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans/OpenSans-ExtraBold.eot");
+  src:
+    url("../fonts/OpenSans/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/OpenSans/OpenSans-ExtraBold.woff2") format("woff2"),
+    url("../fonts/OpenSans/OpenSans-ExtraBold.woff") format("woff"),
+    url("../fonts/OpenSans/OpenSans-ExtraBold.ttf") format("truetype")
+}
+
+
+

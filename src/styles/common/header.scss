@@ -1,0 +1,8 @@
+@import "utils/variables";
+
+.header {
+  padding-top: 24px;
+  @media (min-width: $media-screen-tablet) {
+    padding-top: 32px;
+  }
+}

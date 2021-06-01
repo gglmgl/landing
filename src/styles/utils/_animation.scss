@@ -1,0 +1,102 @@
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    &.infinite {
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+    }
+    &.delay-1s {
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+    }
+    &.delay-2s {
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+    }
+    &.delay-3s {
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+    }
+    &.delay-4s {
+        -webkit-animation-delay: 4s;
+        animation-delay: 4s;
+    }
+    &.delay-5s {
+        -webkit-animation-delay: 5s;
+        animation-delay: 5s;
+    }
+    &.fast {
+        -webkit-animation-duration: 800ms;
+        animation-duration: 800ms;
+    }
+    &.faster {
+        -webkit-animation-duration: 500ms;
+        animation-duration: 500ms;
+    }
+    &.slow {
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+    }
+    &.slower {
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+    }
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-20%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 20%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}

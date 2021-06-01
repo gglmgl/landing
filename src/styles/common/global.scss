@@ -1,0 +1,40 @@
+@import "../../local_modules/normalize.css/normalize";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family:" Open Sans", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

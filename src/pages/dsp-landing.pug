@@ -1,0 +1,566 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="description" content="Get customizable demand side platform for programmatic media buying. &#10004;For advertisers, app developers, agencies, networks. &#10004;No middlemen fees. &#10004;Free Trial")
+    title White-Label DSP for Programmatic Advertising | Epom DSP
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    meta(name="theme-color" content="#ffffff")
+    link(rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
+    link(rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5")
+    link(rel="stylesheet" href="css/style.min.css")
+    link(rel="stylesheet" href="css/dsp-landing.min.css")
+    script.
+      (function(w,d,s,l,i){w[l]=w[l] || [];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-W6TFQS9');
+    script.
+      (function (w, d, t, r, u) {
+        var f, n, i;
+        w[u] = w[u] || [], f = function () {
+          var o =
+
+                  {ti: "56002735"}
+          ;o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
+        }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () {
+          var s = this.readyState;
+          s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
+        }
+                , i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
+      })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+
+    script.
+      (function(){var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)})("woopra");woopra.config({domain: 'dsp.epom.com'});woopra.track();
+
+    script.
+      (function (h, o, t, j, a, r) {
+        h.hj = h.hj || function () {
+          (h.hj.q = h.hj.q || []).push(arguments)
+        };
+        h._hjSettings = {hjid: 968009, hjsv: 6};
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    meta(name="google-site-verification" content="Une9HKb5cISO8tT_XgeomPLRMN5h5937ZTrY6jeXhkw")
+
+  body
+    .hamburger-wrapper
+      button.hamburger.hamburger--emphatic(type="button")
+        span.hamburger-box
+          span.hamburger-inner
+      img.header__logo(src="img/global/epom-logo--white.svg" alt="EPOM logo")
+
+    .navigation-mobile.menu-navigation
+      img.navigation-mobile__logo(src="img/global/epom-logo.svg" alt="EPOM logo")
+      .navigation-mobile-content
+        a.navigation-mobile__link(href="#solution") Solution
+        a.navigation-mobile__link(href="#features") Features
+        a.navigation-mobile__link(href="#adformats") Ad Formats
+        .header-action
+          a(href="/sign-up.html").header-action-link Get free trial
+    header.main-header.sticky
+      .header-wrapper
+        a(href="https://dsp.epom.com/").header__logo-link
+          img.header__logo(src="img/global/epom-logo--white.svg" alt="EPOM logo")
+          img.header__logo--fixed(src="img/global/epom-logo.svg" alt="EPOM logo")
+        nav.desktop-menu
+          .main-menu.menu-navigation
+            .main-menu__list
+              a.main-menu__link(href="#solution") Solution
+              a.main-menu__link(href="#features") Features
+              a.main-menu__link(href="#adformats") Ad Formats
+          .header-action
+            a(href="/sign-up.html").header-action-link  Free trial
+
+    main.main-content
+      section.page-section.page-section--greeting
+        .page-section__inner
+          .page-section__column.page-section__column--greeting.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".2s" style="visibility: hidden")
+            h1.section-title White-label DSP for Full Programmatic Control
+            p.section-description Epom white-label DSP is a ready-to-use RTB bidder designed for transparent and autonomous advertising. Build your own demand-side platform in weeks and buy traffic without paying middlemen.
+            .greeting-actions
+              a(href="/sign-up.html").greeting-link.get-trial-link  Get free trial
+              a(href="https://calendly.com/s-shchelkov" target='_blank').greeting-link.contact-sales-link Contact Sales
+          .page-section__column.page-section__column--greeting-illustration.wow.fadeInUp(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden")
+            .illustrations
+              picture
+                source(srcset="img/dsp-landing/dashboard.webp 1x, img/dsp-landing/dashboard2x.webp 2x" type="image/webp")
+                source(srcset="img/dsp-landing/dashboard.png, img/dsp-landing/dashboard2x.png 2x" type="image/png")
+                img.dashboard-illustration(src="img/dsp-landing/dashboard.png" alt="dashboard")
+
+              .dashboard-award.wow.fadeInRight(data-wow-duration=".6s" data-wow-delay=".6s" style="visibility: hidden")
+                picture
+                  source(srcset="img/dsp-landing/martech-award.webp" type="image/webp")
+                  source(srcset="img/dsp-landing/martech-award.png" type="image/png")
+                  img.dashboard-award__image(src="img/dsp-landing/martech-award.png" alt="martech award 2019")
+
+      section.page-section.page-section--business#solution
+        .page-section__inner
+          h2.page-section__title.page-section__title--centered Pure Value for Every Business in&nbsp;Programmatic
+          p.page-section__description Epom white-label DSP ensures simple, <span style="white-space:nowrap">data-driven</span>, and cost-effective media buying with your own DSP regardless of your business model.
+
+          .slider-key-features
+            .select-slider-features
+              .select__head(data-attr-feature="agencies")
+                span Ad Agencies
+                svg(width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg")
+                  path(d="M1.33203 6.33203L5.9987 1.66537L10.6654 6.33203" stroke="#5B6375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+              ul.select__list(style="display: none;")
+                li.select__item(data-feature="agencies")
+                  .slider-key-features__navigation-item.is-active(data-slide-index="0")
+                    .key-feature(role="button" tabindex="0")
+                      span.key-feature__vector.key-feature__vector--agencies
+                        picture
+                          source(srcset="img/dsp-landing/slider-business/agencies.webp 1x, img/dsp-landing/slider-business/agencies2x.webp 2x" type="image/webp")
+                          source(srcset="img/dsp-landing/slider-business/agencies.png, img/dsp-landing/slider-business/agencies2x.png 2x" type="image/png")
+                          img.key-feature__image(src="img/dsp-landing/slider-business/agencies.png" alt="Agencies")
+
+                      .key-feature__title Ad Agencies
+                li.select__item(data-feature="network")
+                  .slider-key-features__navigation-item(data-slide-index="1")
+                    .key-feature(role="button" tabindex="0")
+                      span.key-feature__vector.key-feature__vector--network
+                        picture
+                          source(srcset="img/dsp-landing/slider-business/network.webp 1x, img/dsp-landing/slider-business/network2x.webp 2x" type="image/webp")
+                          source(srcset="img/dsp-landing/slider-business/network.png, img/dsp-landing/slider-business/network2x.png 2x" type="image/png")
+                          img.key-feature__image.key-feature__image--network(src="img/dsp-landing/slider-business/network.png" alt="Network")
+                      .key-feature__title Ad Networks
+                li.select__item(data-feature="brands")
+                  .slider-key-features__navigation-item(data-slide-index="2")
+                    .key-feature(role="button" tabindex="0")
+                      span.key-feature__vector.key-feature__vector--brands
+                        picture
+                          source(srcset="img/dsp-landing/slider-business/brands.webp 1x, img/dsp-landing/slider-business/brands2x.webp 2x" type="image/webp")
+                          source(srcset="img/dsp-landing/slider-business/brands.png, img/dsp-landing/slider-business/brands2x.png 2x" type="image/png")
+                          img.key-feature__image.key-feature__image--brands(src="img/dsp-landing/slider-business/brands.png" alt="Brands")
+                      .key-feature__title Brands
+                li.select__item(data-feature="publishers")
+                  .slider-key-features__navigation-item(data-slide-index="3")
+                    .key-feature.key-feature--last(role="button" tabindex="0")
+                      span.key-feature__vector.key-feature__vector--publisher
+                        picture
+                          source(srcset="img/dsp-landing/slider-business/publishers.webp 1x, img/dsp-landing/slider-business/publishers2x.webp 2x" type="image/webp")
+                          source(srcset="img/dsp-landing/slider-business/publishers.png, img/dsp-landing/slider-business/publishers2x.png 2x" type="image/png")
+                          img.key-feature__image.key-feature__image--publisher(src="img/dsp-landing/slider-business/publishers.png" alt="Publisher")
+                      .key-feature__title Publisher
+
+            .slider-key-features__navigation.js-slider-key-features-navigation
+              .slider-key-features__navigation-item(data-slide-index="0")
+                .key-feature(role="button" tabindex="0")
+                  span.key-feature__vector.key-feature__vector--agencies
+                    picture
+                      source(srcset="img/dsp-landing/slider-business/agencies.webp 1x, img/dsp-landing/slider-business/agencies2x.webp 2x" type="image/webp")
+                      source(srcset="img/dsp-landing/slider-business/agencies.png, img/dsp-landing/slider-business/agencies2x.png 2x" type="image/png")
+                      img.key-feature__image(src="img/dsp-landing/slider-business/agencies.png" alt="Agencies")
+                  .key-feature__title Ad Agencies
+
+              .slider-key-features__navigation-item(data-slide-index="1")
+                .key-feature(role="button" tabindex="0")
+                  span.key-feature__vector.key-feature__vector--network
+                    picture
+                      source(srcset="img/dsp-landing/slider-business/network.webp 1x, img/dsp-landing/slider-business/network2x.webp 2x" type="image/webp")
+                      source(srcset="img/dsp-landing/slider-business/network.png, img/dsp-landing/slider-business/network2x.png 2x" type="image/png")
+                      img.key-feature__image.key-feature__image--network(src="img/dsp-landing/slider-business/network.png" alt="Network")
+                  .key-feature__title Ad Networks
+
+              .slider-key-features__navigation-item(data-slide-index="2")
+                .key-feature(role="button" tabindex="0")
+                  span.key-feature__vector.key-feature__vector--brands
+                    picture
+                      source(srcset="img/dsp-landing/slider-business/brands.webp 1x, img/dsp-landing/slider-business/brands2x.webp 2x" type="image/webp")
+                      source(srcset="img/dsp-landing/slider-business/brands.png, img/dsp-landing/slider-business/brands2x.png 2x" type="image/png")
+                      img.key-feature__image.key-feature__image--brands(src="img/dsp-landing/slider-business/brands.png" alt="Brands")
+                  .key-feature__title Brands
+
+              .slider-key-features__navigation-item(data-slide-index="3")
+                .key-feature.key-feature--last(role="button" tabindex="0")
+                  span.key-feature__vector.key-feature__vector--publisher
+                    picture
+                      source(srcset="img/dsp-landing/slider-business/publishers.webp 1x, img/dsp-landing/slider-business/publishers2x.webp 2x" type="image/webp")
+                      source(srcset="img/dsp-landing/slider-business/publishers.png, img/dsp-landing/slider-business/publishers2x.png 2x" type="image/png")
+                      img.key-feature__image.key-feature__image--publisher(src="img/dsp-landing/slider-business/publishers.png" alt="Publisher")
+                  .key-feature__title Publisher
+
+            .slider-key-features__viewport.js-slider-key-features-viewport
+              .slider-key-features__slide
+                .features__slide-wrapper.agencies-section
+                  .slide-block.slide-block--indent.wow.fadeInUp(data-wow-duration=".4s" data-wow-delay=".2s" style="visibility: hidden")
+                    .slide-block__icon.icon-one
+                    .slide-block__title Build your platform within a week
+                    .slide-block__description Spend zero cost on development — buy and set-up a DSP belonging to you in a week
+
+                  .slide-block.slide-block--indent.wow.fadeInUp(data-wow-duration=".4s" data-wow-delay=".3s" style="visibility: hidden")
+                    .slide-block__icon.icon-two
+                    .slide-block__title Use one DSP instead of many
+                    .slide-block__description Unite all media buying activities in one place — connect to custom SSPs and buy relevant traffic
+
+                  .slide-block.slide-block--indent.wow.fadeInUp(data-wow-duration=".4s" data-wow-delay=".4s" style="visibility: hidden")
+                    .slide-block__icon.icon-three
+                    .slide-block__title Save money on bid markups
+                    .slide-block__description Stop paying fees to DSP providers and enjoy transparent & cost-effective bidding
+
+                  .slide-block.wow.fadeInUp(data-wow-duration=".4s" data-wow-delay=".5s" style="visibility: hidden")
+                    .slide-block__icon.icon-four
+                    .slide-block__title Serve any creatives you wish
+                    .slide-block__description Let your fantasy run free: serve any videos, banners, native, push, or interstitial ads.
+
+                  .slide-block.wow.fadeInUp(data-wow-duration=".4s" data-wow-delay=".6s" style="visibility: hidden")
+                    .slide-block__icon.icon-five
+                    .slide-block__title Access lifetime analytics
+                    .slide-block__description See any historical data for any client whenever you need it — now with lifetime analytics.
+
+                  .slide-block.wow.fadeInUp(data-wow-duration=".4s" data-wow-delay=".7s" style="visibility: hidden")
+                    .slide-block__icon.icon-six
+                    .slide-block__title Auto-optimize campaigns
+                    .slide-block__description Get the most of each campaign with the unique system of bidding rules and multipliers.
+
+              .slider-key-features__slide
+                .features__slide-wrapper.networks-section
+                  .slide-block.slide-block--indent
+                    .slide-block__icon.icon-one
+                    .slide-block__title Get a ready-to-go DSP within a week
+                    .slide-block__description Save years and millions on development — buy ready customizable platform.
+
+                  .slide-block.slide-block--indent
+                    .slide-block__icon.icon-two
+                    .slide-block__title Consolidate your media buying
+                    .slide-block__description Keep all data in one dashboard — set up custom SSPs and aggregate analytic insights.
+
+                  .slide-block.slide-block--indent
+                    .slide-block__icon.icon-three
+                    .slide-block__title Make profits with your platform
+                    .slide-block__description Keep all data in one dashboard — set up custom SSPs and aggregate analytic insights.
+
+                  .slide-block
+                    .slide-block__icon.icon-four
+                    .slide-block__title Create self-serve accounts
+                    .slide-block__description Give out self-serve accounts to your advertisers — let them bid on your traffic on their own.
+
+                  .slide-block
+                    .slide-block__icon.icon-five
+                    .slide-block__title Integrate with 3rd-party tools
+                    .slide-block__description Use a powerful API to combine all your software in a powerful media buying stack.
+
+                  .slide-block.slide-block--right-indent
+                    .slide-block__icon.icon-six
+                    .slide-block__title Quick-start with our ad exchange
+                    .slide-block__description Start buying traffic right by connecting to the Epom ad exchange now, add your own SSPs later.
+
+              .slider-key-features__slide
+                .features__slide-wrapper.brands-section
+                  .slide-block.slide-block--indent
+                    .slide-block__icon.icon-one
+                    .slide-block__title Advertise your products in-house
+                    .slide-block__description Stop paying fees to middlemen and take full control over your ad campaign performance.
+
+                  .slide-block.slide-block--indent
+                    .slide-block__icon.icon-two
+                    .slide-block__title Enrich targeting with custom data
+                    .slide-block__description Get access to any data coming from SSPs and set targeting with custom attributes.
+
+                  .slide-block.slide-block--indent.slide-block--right-indent
+                    .slide-block__icon.icon-three
+                    .slide-block__title Save time on campaign&nbsp;management
+                    .slide-block__description No more campaign babysitting — enjoy automatic media buying via RTB and optimization.
+
+                  .slide-block
+                    .slide-block__icon.icon-four
+                    .slide-block__title Boost performance of each creative
+                    .slide-block__description Get transparent live reports and fine-tune your campaigns with both manual and auto algorithms.
+
+                  .slide-block
+                    .slide-block__icon.icon-five
+                    .slide-block__title Access premium traffic in one click
+                    .slide-block__description Connect to Epom ad exchange and get access to 50+ SSPs like Google Adx, MoPub, and Unity.
+
+                  .slide-block
+                    .slide-block__icon.icon-six.slide-block--right-indent
+                    .slide-block__title Customize branding and UI
+                    .slide-block__description Set your brand’s theme, colors, logo, and domain for your DSP. Because now it’s truly yours!
+
+              .slider-key-features__slide
+                .features__slide-wrapper.publishers-section
+                  .slide-block.slide-block--indent
+                    .slide-block__icon.icon-one
+                    .slide-block__title Offer a self-serve DSP
+                    .slide-block__description Set up accounts for advertisers and let them bid on your traffic programmatically.
+
+                  .slide-block.slide-block--indent
+                    .slide-block__icon.icon-two
+                    .slide-block__title Structurize your inventory
+                    .slide-block__description Sell premium placements directly and let advertisers compete for remnants.
+
+                  .slide-block.slide-block--indent.slide-block--right-indent
+                    .slide-block__icon.icon-three
+                    .slide-block__title Combine ad server + DSP in one bundle
+                    .slide-block__description Use an ad server as an SSP and offer your inventory to your advertisers in a white-label DSP.
+
+                  .slide-block
+                    .slide-block__icon.icon-four
+                    .slide-block__title Provide the best user experience
+                    .slide-block__description Never compromise UX — serve user-friendly native ads that organically fit your content.
+
+                  .slide-block
+                    .slide-block__icon.icon-five
+                    .slide-block__title Make ads relevant to visitors
+                    .slide-block__description Send audience data to a white-label DSP and enrich your advertisers’ targeting.
+
+                  .slide-block
+                    .slide-block__icon.icon-six
+                    .slide-block__title Retarget your best segments
+                    .slide-block__description Run retargeting ads on other websites by connecting other SSPs as traffic sources.
+
+      section.page-section.page-section--solution
+        .page-section__inner
+          .page-section__column.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".2s" style="visibility: hidden")
+            h3.section-title Choose a better solution
+            p.section-description Don't mess with middlemen — set your own programmatic rules today
+          .page-section__column
+            .greeting-actions.wow.fadeInRight(data-wow-duration=".6s" data-wow-delay=".2s" style="visibility: hidden")
+              a(href="/sign-up.html").greeting-link.get-trial-link  Get free trial
+
+      section.page-section.page-section--features#features
+        .page-section__inner
+          .page-section__column.page-section__column--content
+            h3.section-title Advertise Smarter with&nbsp;Unique&nbsp;Features on&nbsp;Board
+            p.section-description Epom white-label DSP ensures simple, <span style="white-space:nowrap">data-driven</span>, and cost-effective media buying&nbsp;with your own DSP regardless of your business model
+            .features-slider-navigation.features-slider-navigation--desktop
+              .slider-nav-arrow
+                button.btn-prev-arrow
+                button.btn-next-arrow
+
+          .page-section__column
+            .timeline-carousel
+              .timeline-carousel__wrapper.slider-single.js-timeline-carousel(data-carouselitem="timeline-carousel")
+                .timeline-carousel__item-wrapper
+                  .timeline-carousel__img
+                    img(src="img/dsp-landing/slider-features/rules.svg" alt="Bidding Rules")
+                  .timeline-carousel__title Bidding Rules
+                  .timeline-carousel__desc Avoid manual ad campaign management and everyday optimization with the smart system of bidding rules. They also keep your budget away from underperforming traffic sources.
+                .timeline-carousel__item-wrapper
+                  .timeline-carousel__img
+                    img(src="img/dsp-landing/slider-features/multiplier.svg" alt="Bidding Multiplier")
+                  .timeline-carousel__title Bidding Multiplier
+                  .timeline-carousel__desc Automatically adjust your bids for specific traffic sources and win the impression without overpaying with a bidding multiplier. Pay only the second price plus $0.01 for impressions won.
+                .timeline-carousel__item-wrapper
+                  .timeline-carousel__img
+                    img(src="img/dsp-landing/slider-features/bidding.svg" alt="CPM + CPC Bidding ")
+                  .timeline-carousel__title CPM + CPC Bidding
+                  .timeline-carousel__desc Buy unique impressions instead of installs and other actions that can be faked or pay per click instead of just a view and drive more conversions to your campaigns.
+                .timeline-carousel__item-wrapper
+                  .timeline-carousel__img
+                    img(src="img/dsp-landing/slider-features/targeting.svg" alt="Custom Targeting")
+                  .timeline-carousel__title Custom Targeting
+                  .timeline-carousel__desc Get custom audience data from the supply side and target with any parameter you need. Replace the aging DMP with 1s-party consented data coming from publishers.
+                .timeline-carousel__item-wrapper
+                  .timeline-carousel__img
+                    img(src="img/dsp-landing/slider-features/modularity.svg" alt="Unlimited Modularity ")
+                  .timeline-carousel__title Unlimited Modularity
+                  .timeline-carousel__desc Customize UI, integrate with 3rd-party analytics tools via API, or invent your own feature to include! Our team is open to custom feature development and ready to make your idea a reality.
+                .timeline-carousel__item-wrapper
+                  .timeline-carousel__img
+                    img(src="img/dsp-landing/slider-features/onboarding.svg" alt="Smart Onboarding ")
+                  .timeline-carousel__title Smart Onboarding
+                  .timeline-carousel__desc Set up your platform in days with the help of our dedicated support. Other than that, you’ll have free access to videos, interactive guides, and a smart onboarding flow to help you learn DSP on your own.
+                .timeline-carousel__item-wrapper
+                  .timeline-carousel__img
+                    img(src="img/dsp-landing/slider-features/dsp-bundle.svg" alt="DSP + Ad Server as a Bundle")
+                  .timeline-carousel__title DSP + Ad Server as a Bundle
+                  .timeline-carousel__desc Get a full-stack programmatic solution — use Epom ad server as an SSP. Connect your inventory slots to the custom DSP endpoints, one of which can be the endpoint of Epom WL DSP.
+                .timeline-carousel__item-wrapper
+                  .timeline-carousel__img
+                    img(src="img/dsp-landing/slider-features/compliance.svg" alt="Full regulatory compliance")
+                  .timeline-carousel__title Full regulatory compliance
+                  .timeline-carousel__desc Epom constantly check-ins with the new industry regulations and updates the software accordingly. No need to worry about the privacy and consumer rights of your clients — we’ve already covered that.
+            .features-slider-navigation.features-slider-navigation--mobile
+              .slider-nav-arrow
+                button.btn-prev-arrow
+                button.btn-next-arrow
+      section.page-section.page-section--booking
+        .page-section__inner
+          .page-section__column.page-section__column--video
+            .video-player.wow.fadeInUp(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden")
+              .video-player__lazyframe(aria-label=title tabindex="0" data-vendor="youtube" data-src="https://www.youtube.com/embed/rYTNbnpYgeQ?autoplay=1")
+                .picture-wrapper
+                  picture
+                    source(srcset="img/dsp-landing/booking-demo-video.webp 1x, img/dsp-landing/booking-demo-video2x.webp 2x" type="image/webp")
+                    source(srcset="img/dsp-landing/booking-demo-video.jpg, img/dsp-landing/booking-demo-video2x.jpeg 2x" type="image/jpeg")
+                    img.video-player__image.video-player__image--desktop(src="img/dsp-landing/booking-demo-video.jpg" alt="booking demo")
+                  picture
+                    source(srcset="img/dsp-landing/booking-demo-video-mobile.webp 1x, img/dsp-landing/booking-demo-video-mobile2x.webp 2x" type="image/webp")
+                    source(srcset="img/dsp-landing/booking-demo-video-mobile.jpg, img/dsp-landing/booking-demo-video-mobile2x.jpeg 2x" type="image/jpeg")
+                    img.video-player__image.video-player__image--mobile(src="img/dsp-landing/booking-demo-video-mobile.jpg" alt="booking demo")
+          .page-section__column.wow.fadeInRight(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden")
+            h3.page-section__title See Epom DSP <span class="title-indent">Before Booking a Demo</span>
+            p.page-section__description Take an insider look at the platform with your own eyes and see its features in action.
+      section.page-section.page-section--formats#adformats
+        .page-section__inner
+          h3.page-section__title Time-Tested & Rising Star Ad Formats Inside
+          p.page-section__description From banners to videos to rich media interstitials — test-drive a stunning variety of ad units! All ad formats are customizable for mobile, desktop, and in-app campaigns.
+          .slider-key-formats
+            .select-slider-formats
+              .select__head-formats
+                span Banner
+                svg(width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg")
+                  path(d="M1.33203 6.33203L5.9987 1.66537L10.6654 6.33203" stroke="#5B6375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+
+              ul.select__list-formats(style="display: none;")
+                li.select__item-formats(data-slide-format-index="0")
+                  .slider-key-formats__navigation-item
+                     | Banner
+                li.select__item-formats(data-slide-format-index="1")
+                  .slider-key-formats__navigation-item
+                    | Push
+
+                li.select__item-formats(data-slide-format-index="2")
+                  .slider-key-formats__navigation-item
+                    | Popup
+
+                li.select__item-formats(data-slide-format-index="3")
+                  .slider-key-formats__navigation-item
+                    | Video
+
+                li.select__item-formats(data-slide-format-index="4")
+                  .slider-key-formats__navigation-item
+                    | Native
+
+                li.select__item-formats(data-slide-format-index="5")
+                  .slider-key-formats__navigation-item
+                    | Interstitial
+
+            .slider-key-formats__navigation.js-slider-key-formats-navigation
+              .slider-key-formats__navigation-item(data-slide-format-index="0")
+                .key-formats(role="button" tabindex="0")
+                  .key-format__title Banner
+
+              .slider-key-formats__navigation-item(data-slide-format-index="1")
+                .key-formats(role="button" tabindex="0")
+                  .key-format__title Push
+
+              .slider-key-formats__navigation-item(data-slide-format-index="2")
+                .key-formats(role="button" tabindex="0")
+                  .key-format__title Popup
+
+              .slider-key-formats__navigation-item(data-slide-format-index="3")
+                .key-formats(role="button" tabindex="0")
+                  .key-format__title Video
+
+              .slider-key-formats__navigation-item(data-slide-format-index="4")
+                .key-formats(role="button" tabindex="0")
+                  .key-format__title Native
+
+              .slider-key-formats__navigation-item(data-slide-format-index="5")
+                .key-formats(role="button" tabindex="0")
+                  .key-format__title Interstitial
+
+            .slider-key-formats__viewport.js-slider-key-formats-viewport
+              .slider-key-features__slide
+                .features__slide-wrapper
+                  img.features__image(src="img/gifs/banner.gif" alt="Banner")
+
+              .slider-key-formats__slide
+                .features__slide-wrapper
+                  img.features__image(src="img/gifs/push.gif" alt="Banner")
+
+              .slider-key-formats__slide
+                .features__slide-wrapper
+                  img.features__image(src="img/gifs/popup.gif" alt="Banner")
+
+              .slider-key-formats__slide
+                .features__slide-wrapper
+                  img.features__image(src="img/gifs/video.gif" alt="Banner")
+
+              .slider-key-formats__slide
+                .features__slide-wrapper
+                  img.features__image(src="img/gifs/native.gif" alt="Banner")
+
+              .slider-key-features__slide
+                .features__slide-wrapper
+                  img.features__image(src="img/gifs/inter.gif" alt="Banner")
+
+      section.page-section.page-section--forbes
+        .page-section__inner
+          h3.section-title.wow(style="visibility: hidden") Epom DSP is <span>top ukrainian startup</span> recognized by
+          img(src="img/global/forbes-logo.svg" alt="Forbes")
+      section.page-section.page-section--customization
+        .tablet-block
+          h3.section-title.wow.fadeInUp(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden") Flat Fee for Unlimited Features & Customization
+          p.section-description.wow.fadeInUp(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden") Pay a flat fee each month and discard bid markups that could make up 10-30% of your ad spend. All available features, formats, and dedicated onboarding are included in the price.
+        .page-section__inner
+          .page-section__column.page-section__features
+            h3.section-title.wow.fadeInUp(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden") Flat Fee for Unlimited Features & Customization
+            p.section-description.wow.fadeInUp(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden") Pay a flat fee each month and discard bid markups that could make up 10-30% of your ad spend. All available features, formats, and dedicated onboarding are included in the price.
+            ul.section-list
+              li.section-list__item.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".6s" style="visibility: hidden")
+                h4.section-list-title Platform ownership
+                p.section-list-description Root user access, self-serve advertiser accounts, ultimate&nbsp;customization
+              li.section-list__item.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".7s" style="visibility: hidden")
+                h4.section-list-title Full traffic control
+                p.section-list-description Custom SSP setup, bidstream data access, ad&nbsp;fraud&nbsp;protection.
+              li.section-list__item.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".8s" style="visibility: hidden")
+                h4.section-list-title Ad format variety
+                p.section-list-description Running display, native & video to pop-ups and interstitials&nbsp;ads is available.
+              li.section-list__item.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".9s" style="visibility: hidden")
+                h4.section-list-title Multilayered optimization
+                p.section-list-description Bidding rules & multipliers, advanced capping, balanced bidding, and more.
+              li.section-list__item.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay="1s" style="visibility: hidden")
+                h4.section-list-title Lifelong support
+                p.section-list-description Platform setup assistance, full maintenance, free software&nbsp;updates.
+          .page-section__column.page-section__column--fee
+            .fee-column.wow.fadeInRight(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden")
+              p.section-label Flat fee
+              p.section-title White-label DSP
+              p.section-price $2000
+              .actions
+                a(href="/sign-up.html").actions-link.get-trial-link  Get free trial
+            .fee-column.wow.fadeInUp(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden")
+              picture
+                source(srcset="img/dsp-landing/fee-illustration.webp 1x, img/dsp-landing/fee-illustration2x.webp 2x" type="image/webp")
+                source(srcset="img/dsp-landing/fee-illustration.png, img/dsp-landing/fee-illustration2x.png 2x" type="image/png")
+                img.fee-illustration(src="img/dsp-landing/fee-illustration.png" alt="Dashboard")
+
+      section.page-section.page-section--footer
+        .page-section__inner
+          h2.page-section__title.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden") Epom white-label DSP: <br>robust, transparent, and infinitely YOURS
+          p.page-section__description.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".5s" style="visibility: hidden") Try the platform today and bring your programmatic dream in-house tomorrow.
+          .actions.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".6s" style="visibility: hidden")
+            a(href="/sign-up.html").actions-link.get-trial-link  Get free trial
+          picture
+            source(srcset="img/dsp-landing/caesar-illustration.webp 1x, img/dsp-landing/caesar-illustration2x.webp 2x" type="image/webp")
+            source(srcset="img/dsp-landing/caesar-illustration.png, img/dsp-landing/caesar-illustration2x.png 2x" type="image/png")
+            img.ceaser-illustration.wow.fadeInUp(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden" src="img/dsp-landing/caesar-illustration.png" alt="Caesar illustration")
+
+          picture
+            source(srcset="img/dsp-landing/ceaser-tooltip.webp 1x, img/dsp-landing/ceaser-tooltip2x.webp 2x" type="image/webp")
+            source(srcset="img/dsp-landing/ceaser-tooltip.png, img/dsp-landing/ceaser-tooltip2x.png 2x" type="image/png")
+            img.ceaser-tooltip.wow.fadeInRight(data-wow-duration=".6s" data-wow-delay=".6s" style="visibility: hidden" src="img/dsp-landing/ceaser-tooltip.png" alt="Caesar tooltip2x")
+
+          picture
+            source(srcset="img/dsp-landing/ceaser-tooltip-tablet.webp 1x, img/dsp-landing/ceaser-tooltip-tablet2x.webp 2x" type="image/webp")
+            source(srcset="img/dsp-landing/ceaser-tooltip-tablet.png, img/dsp-landing/ceaser-tooltip-tablet2x.png 2x" type="image/png")
+            img.ceaser-tooltip.ceaser-tooltip--tablet.wow.fadeInRight(data-wow-duration=".6s" data-wow-delay=".6s" style="visibility: hidden" src="img/dsp-landing/ceaser-tooltip-tablet.png" alt="Caesar tooltip2x")
+
+    footer.footer.footer--blue.layout
+      .footer-wrapper
+        .footer-copyright
+          | 2011-<span id="copyright-year"></span> Epom, &copy; All Rights Reserved
+
+        .footer-socials
+          a(href="https://twitter.com/epomadserver?lang=en" target="_blank").socials-icon.socials-icon--facebook
+
+          a(href="https://www.linkedin.com/company/epom" target="_blank").socials-icon.socials-icon--linkedin
+
+          a(href="https://www.youtube.com/channel/UCbGVIFBLS0JKdqeFJytR8cA" target="_blank").socials-icon.socials-icon--youtube
+
+          a(href="https://twitter.com/epomadserver?lang=en" target="_blank").socials-icon.socials-icon--twitter
+
+    script(src='js/main.min.js')

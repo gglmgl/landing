@@ -1,1 +1,4 @@
-# landing
+- `npm run start` 
+- `npm run build` 
+- `npm run lighthouse`
+- `npm run test`
