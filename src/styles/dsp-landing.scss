@@ -38,6 +38,7 @@ body {
 }
 
 .main-header.fixed {
+  padding: 22px 0;
   opacity: 1;
   position: fixed;
   background-color: $white-color;
@@ -53,15 +54,11 @@ body {
   }
 
   .header__logo-link {
-    @media (min-width: $media-screen-desktop) {
-      padding-top: 26px;
-    }
+    padding-top: 0;
   }
 
   .desktop-menu {
-    @media (min-width: $media-screen-desktop) {
-      padding-top: 34px;
-    }
+    padding-top: 0;
   }
 
   .main-menu__list {
@@ -69,6 +66,8 @@ body {
       color: $title-color;
       &:hover {
         &:before {
+          top: -28px;
+          height: 7px;
           background-color: #905AE2;
         }
       }
@@ -404,8 +403,10 @@ body {
 
 .page-section--business {
   padding-top: 56px;
+  padding-bottom: 56px;
   @media (min-width: $media-screen-tablet) {
     padding-top: 100px;
+    padding-bottom: 0;
   }
   @media (min-width: $media-screen-desktop) {
     padding-top: 140px;
@@ -879,6 +880,13 @@ body {
 
     .slide-block--right-indent {
       padding-right: 0;
+      @media (min-width: $media-screen-tablet) {
+        padding-right: 10px;
+      }
+      @media (min-width: $media-screen-desktop) {
+        padding-right: 0;
+      }
+
     }
   }
 }
@@ -1445,6 +1453,7 @@ body {
 
   .slick-current {
     .key-format__title {
+      color: #905AE2;
       &::before {
         position: absolute;
         content: "";

@@ -19,6 +19,10 @@ body {
 
 .main-content {
   flex: 1 0 auto;
+  @media (min-width: $media-screen-desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .layout {
@@ -38,19 +42,15 @@ body {
 .page-section--intro {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin-top: 124px;
   flex-direction: column;
   @media (min-width: $media-screen-tablet) {
     flex-direction: row;
     margin-top: 102px;
   }
-
-  @media (min-width: $media-screen-lg-desktop) {
-    margin-top: 0px;
-  }
-
-  @media (min-width: $media-screen-xl-desktop) {
-    margin-top: 80px;
+  @media (min-width: $media-screen-desktop) {
+    margin-top: 0;
   }
 }
 
