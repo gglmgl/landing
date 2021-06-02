@@ -38,7 +38,10 @@ body {
 }
 
 .main-header.fixed {
-  padding: 22px 0;
+  padding: 22px 24px;
+  @media (min-width: $media-screen-tablet) {
+    padding: 22px 0;
+  }
   opacity: 1;
   position: fixed;
   background-color: $white-color;
