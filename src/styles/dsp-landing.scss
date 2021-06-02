@@ -38,10 +38,6 @@ body {
 }
 
 .main-header.fixed {
-  padding: 22px 24px;
-  @media (min-width: $media-screen-tablet) {
-    padding: 22px 0;
-  }
   opacity: 1;
   position: fixed;
   background-color: $white-color;
@@ -49,6 +45,10 @@ body {
   right: 0;
   z-index: 100;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  padding: 22px 60px;
+  @media (min-width: $media-screen-desktop) {
+    padding: 22px 0;
+  }
   .header__logo--fixed {
     display: block;
   }
