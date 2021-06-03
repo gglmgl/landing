@@ -62,7 +62,6 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "animate.css": "^4.1.1",
     "jquery": "^3.5.0",
     "lazyframe": "^2.2.4",
     "normalize.css": "^8.0.1",
