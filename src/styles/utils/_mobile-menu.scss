@@ -61,6 +61,12 @@ body.menu-active-js {
   transition: .5s linear;
   padding: 26px 24px 0;
 
+  .navigation-mobile__logo {
+    display: block;
+    width: 104px;
+    height: 36px;
+  }
+
   .navigation-mobile-content {
     display: flex;
     flex-direction: column;

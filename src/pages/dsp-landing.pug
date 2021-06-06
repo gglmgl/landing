@@ -91,10 +91,7 @@ html(lang="ru")
               a(href="https://calendly.com/s-shchelkov" target='_blank').greeting-link.contact-sales-link Contact Sales
           .page-section__column.page-section__column--greeting-illustration.wow.fadeInUp(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden")
             .illustrations
-              picture
-                source(srcset="img/dsp-landing/dashboard.webp 1x, img/dsp-landing/dashboard2x.webp 2x" type="image/webp")
-                source(srcset="img/dsp-landing/dashboard.png, img/dsp-landing/dashboard2x.png 2x" type="image/png")
-                img.dashboard-illustration(src="img/dsp-landing/dashboard.png" alt="dashboard")
+              img.dashboard-illustration(src="img/dsp-landing/dashboard.svg" alt="dashboard")
 
               .dashboard-award.wow.fadeInRight(data-wow-duration=".6s" data-wow-delay=".6s" style="visibility: hidden")
                 picture
@@ -196,17 +193,17 @@ html(lang="ru")
                   .slide-block.slide-block--indent.wow.fadeInUp(data-wow-duration=".4s" data-wow-delay=".2s" style="visibility: hidden")
                     .slide-block__icon.icon-one
                     .slide-block__title Build your platform within a week
-                    .slide-block__description Spend zero cost on development — buy and set-up a DSP belonging to you in a week
+                    .slide-block__description Spend zero cost on development — buy and set-up a DSP belonging to you in a week.
 
                   .slide-block.slide-block--indent.wow.fadeInUp(data-wow-duration=".4s" data-wow-delay=".3s" style="visibility: hidden")
                     .slide-block__icon.icon-two
                     .slide-block__title Use one DSP instead of many
-                    .slide-block__description Unite all media buying activities in one place — connect to custom SSPs and buy relevant traffic
+                    .slide-block__description Unite all media buying activities in one place — connect to custom SSPs and buy relevant traffic.
 
                   .slide-block.slide-block--indent.wow.fadeInUp(data-wow-duration=".4s" data-wow-delay=".4s" style="visibility: hidden")
                     .slide-block__icon.icon-three
                     .slide-block__title Save money on bid markups
-                    .slide-block__description Stop paying fees to DSP providers and enjoy transparent & cost-effective bidding
+                    .slide-block__description Stop paying fees to DSP providers and enjoy transparent & cost-effective bidding.
 
                   .slide-block.wow.fadeInUp(data-wow-duration=".4s" data-wow-delay=".5s" style="visibility: hidden")
                     .slide-block__icon.icon-four
@@ -374,12 +371,12 @@ html(lang="ru")
                 .timeline-carousel__item-wrapper
                   .timeline-carousel__img
                     img(src="img/dsp-landing/slider-features/dsp-bundle.svg" alt="DSP + Ad Server as a Bundle")
-                  .timeline-carousel__title DSP + Ad Server as a Bundle
+                  .timeline-carousel__title DSP + Ad Server as&nbsp;a&nbsp;Bundle
                   .timeline-carousel__desc Get a full-stack programmatic solution — use Epom ad server as an SSP. Connect your inventory slots to the custom DSP endpoints, one of which can be the endpoint of Epom WL DSP.
                 .timeline-carousel__item-wrapper
                   .timeline-carousel__img
                     img(src="img/dsp-landing/slider-features/compliance.svg" alt="Full regulatory compliance")
-                  .timeline-carousel__title Full regulatory compliance
+                  .timeline-carousel__title Full regulatory <span class="break">compliance</span>
                   .timeline-carousel__desc Epom constantly check-ins with the new industry regulations and updates the software accordingly. No need to worry about the privacy and consumer rights of your clients — we’ve already covered that.
             .features-slider-navigation.features-slider-navigation--mobile
               .slider-nav-arrow
@@ -408,88 +405,89 @@ html(lang="ru")
           p.page-section__description From banners to videos to rich media interstitials — test-drive a stunning variety of ad units! All ad formats are customizable for mobile, desktop, and in-app campaigns.
           .slider-key-formats
             .select-slider-formats
-              .select__head-formats
-                span Banner
+              .select__head-formats(data-attr-format="video")
+                span Video
                 svg(width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg")
                   path(d="M1.33203 6.33203L5.9987 1.66537L10.6654 6.33203" stroke="#5B6375" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
 
               ul.select__list-formats(style="display: none;")
-                li.select__item-formats(data-slide-format-index="0")
-                  .slider-key-formats__navigation-item
-                     | Banner
-                li.select__item-formats(data-slide-format-index="1")
-                  .slider-key-formats__navigation-item
-                    | Push
-
-                li.select__item-formats(data-slide-format-index="2")
-                  .slider-key-formats__navigation-item
-                    | Popup
-
-                li.select__item-formats(data-slide-format-index="3")
+                li.select__item-formats(data-slide-format-index="0" data-format="video")
                   .slider-key-formats__navigation-item
                     | Video
 
-                li.select__item-formats(data-slide-format-index="4")
+                li.select__item-formats(data-slide-format-index="1" data-format="interstitial")
+                  .slider-key-formats__navigation-item
+                    | Interstitial
+
+                li.select__item-formats(data-slide-format-index="2" data-format="banner")
+                  .slider-key-formats__navigation-item
+                    | Banner
+
+                li.select__item-formats(data-slide-format-index="3" data-format="native")
                   .slider-key-formats__navigation-item
                     | Native
 
-                li.select__item-formats(data-slide-format-index="5")
+                li.select__item-formats(data-slide-format-index="4" data-format="push")
                   .slider-key-formats__navigation-item
-                    | Interstitial
+                    | Push
+
+                li.select__item-formats(data-slide-format-index="5" data-format="popup")
+                  .slider-key-formats__navigation-item
+                    | Popup
 
             .slider-key-formats__navigation.js-slider-key-formats-navigation
               .slider-key-formats__navigation-item(data-slide-format-index="0")
                 .key-formats(role="button" tabindex="0")
-                  .key-format__title Banner
+                  .key-format__title Video
 
               .slider-key-formats__navigation-item(data-slide-format-index="1")
                 .key-formats(role="button" tabindex="0")
-                  .key-format__title Push
+                  .key-format__title Interstitial
 
               .slider-key-formats__navigation-item(data-slide-format-index="2")
                 .key-formats(role="button" tabindex="0")
-                  .key-format__title Popup
+                  .key-format__title Banner
 
               .slider-key-formats__navigation-item(data-slide-format-index="3")
                 .key-formats(role="button" tabindex="0")
-                  .key-format__title Video
+                  .key-format__title Native
 
               .slider-key-formats__navigation-item(data-slide-format-index="4")
                 .key-formats(role="button" tabindex="0")
-                  .key-format__title Native
+                  .key-format__title Push
 
-              .slider-key-formats__navigation-item(data-slide-format-index="5")
+              .slider-key-formats__navigation-item.slider-key-formats__navigation-item-last(data-slide-format-index="5")
                 .key-formats(role="button" tabindex="0")
-                  .key-format__title Interstitial
+                  .key-format__title Popup
 
             .slider-key-formats__viewport.js-slider-key-formats-viewport
               .slider-key-features__slide
-                .features__slide-wrapper
-                  img.features__image(src="img/gifs/banner.gif" alt="Banner")
-
-              .slider-key-formats__slide
-                .features__slide-wrapper
-                  img.features__image(src="img/gifs/push.gif" alt="Banner")
-
-              .slider-key-formats__slide
-                .features__slide-wrapper
-                  img.features__image(src="img/gifs/popup.gif" alt="Banner")
-
-              .slider-key-formats__slide
                 .features__slide-wrapper
                   img.features__image(src="img/gifs/video.gif" alt="Banner")
 
               .slider-key-formats__slide
                 .features__slide-wrapper
+                  img.features__image.features__image--intersial(src="img/gifs/interV2.gif" alt="Banner")
+
+              .slider-key-formats__slide
+                .features__slide-wrapper
+                  img.features__image(src="img/gifs/banner.gif" alt="Banner")
+
+              .slider-key-formats__slide
+                .features__slide-wrapper
                   img.features__image(src="img/gifs/native.gif" alt="Banner")
+
+              .slider-key-formats__slide
+                .features__slide-wrapper
+                  img.features__image(src="img/gifs/push.gif" alt="Banner")
 
               .slider-key-features__slide
                 .features__slide-wrapper
-                  img.features__image(src="img/gifs/inter.gif" alt="Banner")
+                  img.features__image(src="img/gifs/popup.gif" alt="Banner")
 
       section.page-section.page-section--forbes
         .page-section__inner
-          h3.section-title.wow(style="visibility: hidden") Epom DSP is <span>top ukrainian startup</span> recognized by
+          h3.section-title.wow(style="visibility: hidden") Epom is the <span>top Ukrainian startup</span> recognized by
           img(src="img/global/forbes-logo.svg" alt="Forbes")
       section.page-section.page-section--customization
         .tablet-block
@@ -502,7 +500,7 @@ html(lang="ru")
             ul.section-list
               li.section-list__item.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".6s" style="visibility: hidden")
                 h4.section-list-title Platform ownership
-                p.section-list-description Root user access, self-serve advertiser accounts, ultimate&nbsp;customization
+                p.section-list-description Root user access, self-serve advertiser accounts, ultimate&nbsp;customization.
               li.section-list__item.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".7s" style="visibility: hidden")
                 h4.section-list-title Full traffic control
                 p.section-list-description Custom SSP setup, bidstream data access, ad&nbsp;fraud&nbsp;protection.
@@ -553,6 +551,11 @@ html(lang="ru")
       .footer-wrapper
         .footer-copyright
           | 2011-<span id="copyright-year"></span> Epom, &copy; All Rights Reserved
+          p.terms-and-privacy
+            a.terms-and-privacy__link(href="/terms-conditions") Terms and Conditions
+            | ,
+            |
+            a.terms-and-privacy__link(href="/privacy-policy") Privacy Policy
 
         .footer-socials
           a(href="https://twitter.com/epomadserver?lang=en" target="_blank").socials-icon.socials-icon--facebook
@@ -563,4 +566,9 @@ html(lang="ru")
 
           a(href="https://twitter.com/epomadserver?lang=en" target="_blank").socials-icon.socials-icon--twitter
 
+        .footer-term-service
+          a.footer-term-service__link(href="/terms-conditions") Terms and Conditions
+          | ,
+          |
+          a.footer-term-service__link(href="/privacy-policy") Privacy Policy
     script(src='js/main.min.js')

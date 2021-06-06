@@ -184,7 +184,7 @@ body {
     padding-bottom: 110px;
   }
   @media (min-width: $media-screen-desktop) {
-    padding-top: 106px;
+    padding-top: 78px;
     padding-bottom: 140px;
   }
 
@@ -195,7 +195,7 @@ body {
     width: 100%;
     max-width: 1160px;
     margin: auto;
-    padding: 0 6px;
+    padding: 0 16px;
     @media (min-width: $media-screen-phone) {
       padding: 0 24px;
     }
@@ -215,7 +215,8 @@ body {
   }
   @media (min-width: $media-screen-desktop) {
     left: 56px;
-    margin: 0;
+    width: 613px;
+    margin: 0 -52px 0 0;
   }
 
   .illustrations {
@@ -226,8 +227,8 @@ body {
         content: "";
         width: 547px;
         height: 633px;
-        top: -124px;
-        right: -252px;
+        top: -120px;
+        right: -200px;
         background-image: url("../img/dsp-landing/grreting-vector.svg");
         background-repeat: no-repeat;
       }
@@ -235,20 +236,20 @@ body {
 
     .dashboard-illustration {
       display: block;
-      border: 10px solid $white-color;
-      box-shadow: 0 0 2px rgba(148, 161, 170, 0.2);
-      border-radius: 10px;
-      background-color: $white-color;
+      //border: 10px solid $white-color;
+      //box-shadow: 0 0 2px rgba(148, 161, 170, 0.2);
+      //border-radius: 10px;
+      //background-color: $white-color;
       position: relative;
-      @media (min-width: $media-screen-tablet) {
-        border: 18px solid $white-color;
-        border-radius: 30px;
-        box-sizing: content-box;
-      }
-      @media (min-width: $media-screen-desktop) {
-        border: 20px solid $white-color;
-        box-sizing: content-box;
-      }
+      //@media (min-width: $media-screen-tablet) {
+        //border: 18px solid $white-color;
+        //border-radius: 30px;
+        //box-sizing: content-box;
+      //}
+      //@media (min-width: $media-screen-desktop) {
+      //  border: 20px solid $white-color;
+      //  box-sizing: content-box;
+      //}
     }
 
     .dashboard-award {
@@ -421,7 +422,7 @@ body {
     width: 100%;
     max-width: 1160px;
     margin: auto;
-    padding: 0 6px;
+    padding: 0 16px;
     @media (min-width: $media-screen-phone) {
       padding: 0 24px;
     }
@@ -480,7 +481,6 @@ body {
 }
 
 .slider-key-features {
-  //padding-bottom: 116px;
   @media (min-width: $media-screen-tablet) {
     padding-bottom: 60px;
   }
@@ -708,7 +708,7 @@ body {
       }
       @media (min-width: $media-screen-desktop) {
         width: 33%;
-        padding-right: 26px;
+        padding-right: 24px;
       }
       .slide-block__icon {
         display: inline-block;
@@ -900,7 +900,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 52px 6px;
+    padding: 52px 16px;
     width: 100%;
     max-width: 1160px;
     margin: auto;
@@ -986,7 +986,7 @@ body {
     flex-direction: column;
     width: 100%;
     max-width: 1160px;
-    padding: 56px 6px;
+    padding: 56px 16px;
     margin: auto;
     @media (min-width: $media-screen-phone) {
       padding: 56px 24px;
@@ -1128,7 +1128,7 @@ body {
     }
 
     .timeline-carousel__title {
-      margin-top: 24px;
+      margin-top: 20px;
       margin-bottom: 4px;
       font-family: $gilroy-font;
       font-weight: 600;
@@ -1139,6 +1139,12 @@ body {
         margin-bottom: 12px;
         font-size: 24px;
         line-height: 32px;
+      }
+
+      .break {
+        @media (min-width: $media-screen-desktop) {
+          display: block;
+        }
       }
     }
 
@@ -1357,7 +1363,7 @@ body {
     width: 100%;
     max-width: 1160px;
     margin: auto;
-    padding: 56px 6px;
+    padding: 56px 16px;
     @media (min-width: $media-screen-phone) {
       padding: 56px 24px;
     }
@@ -1419,7 +1425,13 @@ body {
       @media (min-width: $media-screen-desktop) {
         max-width: 762px;
         margin: auto;
+
       }
+    }
+
+    .features__image--intersial {
+      box-shadow: 0 0 15.842px rgba(148, 161, 170, 0.2);
+      border-radius: 12.6736px;
     }
   }
 
@@ -1432,6 +1444,24 @@ body {
       border-radius: 14px;
       max-width: 962px;
       margin: 0 auto 60px;
+    }
+  }
+
+  .slider-key-formats__navigation-item {
+    @media (min-width: $media-screen-tablet) {
+      padding-left: 39px;
+    }
+    @media (min-width: $media-screen-desktop) {
+      padding: 0;
+    }
+  }
+
+  .slider-key-formats__navigation-item-last {
+    @media (min-width: $media-screen-tablet) {
+      padding-right: 36px;
+    }
+    @media (min-width: $media-screen-desktop) {
+      padding: 0;
     }
   }
 
@@ -1849,7 +1879,7 @@ body {
     max-width: 1160px;
     margin: auto;
     position: relative;
-    padding: 56px 6px;
+    padding: 56px 16px;
     @media (min-width: $media-screen-phone) {
       padding: 56px 24px;
     }
@@ -1942,7 +1972,7 @@ body {
 
   .actions {
     text-align: center;
-    @media (min-width: $media-screen-desktop) {
+    @media (min-width: $media-screen-tablet) {
       text-align: left;
     }
   }
@@ -2009,6 +2039,47 @@ body {
   }
   @media (min-width: $media-screen-desktop) {
     padding: 34px 0;
+  }
+
+  .footer-term-service {
+    display: none;
+    @media (min-width: $media-screen-desktop) {
+      display: block;
+      .footer-term-service__link {
+        font-size: 14px;
+        line-height: 21px;
+        color: $white-color;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .terms-and-privacy {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 21px;
+    color: $white-color;
+    font-family: $open-sans;
+    text-align: center;
+    @media (min-width: $media-screen-tablet) {
+      margin-top: 6px;
+      font-size: 12px;
+      line-height: 16px;
+      text-align: left;
+    }
+    @media (min-width: $media-screen-desktop) {
+      display: none;
+    }
+    .terms-and-privacy__link {
+      color: $white-color;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -2339,7 +2410,7 @@ body {
     background: $white-color;
     box-shadow: 0 0 20px rgba(148, 161, 170, 0.2);
     border-radius: 8px;
-    max-height: 210px;
+    max-height: 290px;
     overflow: hidden;
     z-index: 100;
     font-size: 14px;
