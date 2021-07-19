@@ -8,10 +8,74 @@ window.wow = new WOW.WOW({
     live: false
 })
 
+let videoWasPlayedFlag = false
+
+const inView = function (element) {
+    const win = $(window)
+    const obj = element
+    const scrollPosition = win.scrollTop()
+    const visibleArea = win.scrollTop() + win.height()
+    const objEndPos = obj.offset().top
+
+    return visibleArea >= objEndPos && scrollPosition <= objEndPos
+}
+
+const loadVideo = (selector) => {
+    const lazyVideos = [].slice.call(document.querySelectorAll(selector))
+
+    lazyVideos.forEach(function (lazyVideo) {
+        lazyVideo.children[0].src = lazyVideo.children[0].dataset.src
+        lazyVideo.load()
+    })
+}
+
+const playVideo = (selector) => {
+    const video = document.querySelector(selector)
+    if (video !== null) {
+        loadVideo(selector)
+
+        window.addEventListener(`scroll`, () => {
+            if (!videoWasPlayedFlag && inView($(video))) {
+                video.play()
+                videoWasPlayedFlag = true
+            }
+        })
+    }
+}
+
+const resetFormatsSlider = (selector) => {
+    // $(selector)[0].pause()
+    $(selector)[0].load()
+    $(selector)[0].play()
+}
+
+$(`.js-change-formats`).on(`click`, function () {
+    const elem = $(this)
+    const formats = $(this).attr(`data-view`)
+    if (formats === `desktop`) {
+        $(`.slider-key-formats--desktop`).show()
+        $(`.slider-key-formats--mobile`).hide()
+        $(`.js-slider-key-formats-navigation`).slick(`refresh`)
+        $(`.js-slider-key-formats-viewport`).slick(`refresh`)
+        resetFormatsSlider(`.features__image--0`)
+    } else if (formats === `mobile`) {
+        $(`.slider-key-formats--desktop`).hide()
+        $(`.slider-key-formats--mobile`).show()
+        $(`.js-slider-key-formats-viewport-mobile`).slick(`refresh`)
+        $(`.js-slider-key-formats-navigation-mobile`).slick(`refresh`)
+        resetFormatsSlider(`.features__image-mobile--0`)
+    }
+    $(`.js-change-formats.is-active`).removeClass(`is-active`)
+    elem.addClass(`is-active`)
+})
+
 $(document).ready(() => {
     window.wow.init()
 
     $(`#copyright-year`).text(new Date().getFullYear())
+
+    playVideo(`.js-ready-video`)
+    playVideo(`.js-ready-video--mobile`)
 
     if ($(`#sign_up_form`).length) {
         // parsley validator
@@ -92,34 +156,19 @@ $(document).ready(() => {
         asNavFor: `.js-slider-key-formats-navigation`
     })
 
+    $(`.js-slider-key-formats-viewport`).on(`afterChange`, function (event, slick, currentSlide) {
+        resetFormatsSlider(`.features__image--${currentSlide}`)
+    })
+
     $(`.js-slider-key-formats-navigation`).slick({
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: `.js-slider-key-formats-viewport`,
         draggable: false,
         dots: false,
         focusOnSelect: true,
         accessibility: false,
-        centerMode: true,
-        centerPadding: `36px`,
-        responsive: [{
-            breakpoint: 960,
-            settings: {
-                variableWidth: true,
-                slidesToShow: 6,
-                centerMode: false,
-            }
-        }, {
-            breakpoint: 639,
-            settings: {
-                slidesToShow: 4,
-                slidesToScroll: 1,
-                centerMode: true,
-                arrows: false,
-                dots: false,
-                infinite: false
-            }
-        }]
+        variableWidth: true
     })
 
     $(`.slider-key-formats__navigation-item`).on(`focusin`, function (event) {
@@ -129,6 +178,38 @@ $(document).ready(() => {
         sliderNavigation[0].slick.slickGoTo(parseInt(slideIndex))
         sliderViewport[0].slick.slickGoTo(parseInt(slideIndex))
     })
+
+    // /
+    $(`.js-slider-key-formats-viewport-mobile`).slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        draggable: false,
+        fade: true,
+        cssEase: `linear`,
+        speed: 150,
+        focusOnSelect: true,
+        dots: false,
+        accessibility: false,
+        asNavFor: `.js-slider-key-formats-navigation-mobile`
+    })
+
+    $(`.js-slider-key-formats-viewport-mobile`).on(`afterChange`, function (event, slick, currentSlide) {
+        resetFormatsSlider(`.features__image-mobile--${currentSlide}`)
+    })
+
+    $(`.js-slider-key-formats-navigation-mobile`).slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: `.js-slider-key-formats-viewport-mobile`,
+        draggable: false,
+        dots: false,
+        focusOnSelect: true,
+        accessibility: false,
+        variableWidth: true
+    })
+    // /
+
 
     $(`.js-timeline-carousel`).slick({
         slidesToShow: 4,
@@ -265,6 +346,20 @@ $(`.select-slider-formats`).on(`click`, `.select__item-formats`, function () {
     sliderNavigation[0].slick.slickGoTo(parseInt(slideIndex))
     sliderViewport[0].slick.slickGoTo(parseInt(slideIndex))
     $(`.select__head-formats`).attr(`data-attr-format`, elem.attr(`data-format`))
+})
+
+$(`.select-slider-formats--mobile`).on(`click`, `.select__item-formats--mobile`, function () {
+  const elem = $(this)
+  $(`.select__head-formats--mobile`).removeClass(`open`)
+  elem.parent().fadeOut()
+  $(`.select__head-formats--mobile span`).text(elem.text())
+
+  const slideIndex = $(this).attr(`data-slide-format-index`)
+  const sliderNavigation = $(`.js-slider-key-formats-navigation-mobile`)
+  const sliderViewport = $(`.js-slider-key-formats-viewport-mobile`)
+  sliderNavigation[0].slick.slickGoTo(parseInt(slideIndex))
+  sliderViewport[0].slick.slickGoTo(parseInt(slideIndex))
+  $(`.select__head-formats--mobile`).attr(`data-attr-format`, elem.attr(`data-format`))
 })
 
 $(document).click(function (e) {
