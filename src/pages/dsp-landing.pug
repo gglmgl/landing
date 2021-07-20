@@ -2,11 +2,12 @@ doctype html
 html(lang="ru")
   head
     meta(charset="utf-8")
-    meta(name="description" content="Get customizable demand side platform for programmatic media buying. &#10004;For advertisers, app developers, agencies, networks. &#10004;No middlemen fees. &#10004;Free Trial")
-    title White-Label DSP for Programmatic Advertising | Epom DSP
+    meta(name="description" content="Get your hands on a ready-made RTB platform buying a white-label DSP (RTB bidder) and bring your programmatic dream in-house.")
+    title Epom white-label DSP for programmatic advertising - Epom DSP
     meta(content="width=device-width, initial-scale=1" name="viewport")
     meta(content="ie=edge" http-equiv="x-ua-compatible")
     meta(name="theme-color" content="#ffffff")
+    meta(prefix="og: http://ogp.me/ns#" property="og:image" content="https://dsp.epom.com/landings/white-label-dsp/img/dsp-og.png")
     link(rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png")
     link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
     link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
@@ -65,7 +66,7 @@ html(lang="ru")
         a.navigation-mobile__link(href="#features") Features
         a.navigation-mobile__link(href="#adformats") Ad Formats
         .header-action
-          a(href="/sign-up.html").header-action-link Get free trial
+          a(href="/sign-up.html").header-action-link Get Free Trial
     header.main-header.sticky
       .header-wrapper
         a(href="https://dsp.epom.com/").header__logo-link
@@ -78,16 +79,18 @@ html(lang="ru")
               a.main-menu__link(href="#features") Features
               a.main-menu__link(href="#adformats") Ad Formats
           .header-action
-            a(href="/sign-up.html").header-action-link  Free trial
+            a(href="/sign-up.html").header-action-link  Free Trial
 
     main.main-content
       section.page-section.page-section--greeting
         .page-section__inner
           .page-section__column.page-section__column--greeting.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".2s" style="visibility: hidden")
-            h1.section-title White-label DSP for Full Programmatic Control
+            h1.section-title
+              span White-label DSP
+              |  for Full Programmatic Control
             p.section-description Epom white-label DSP is a ready-to-use RTB bidder designed for transparent and autonomous advertising. Build your own demand-side platform in weeks and buy traffic without paying middlemen.
             .greeting-actions
-              a(href="/sign-up.html").greeting-link.get-trial-link  Get free trial
+              a(href="/sign-up.html").greeting-link.get-trial-link  Get Free Trial
               a(href="https://calendly.com/s-shchelkov" target='_blank').greeting-link.contact-sales-link Contact Sales
           .page-section__column.page-section__column--greeting-illustration.wow.fadeInUp(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden")
             .illustrations
@@ -323,7 +326,7 @@ html(lang="ru")
             p.section-description Don't mess with middlemen — set your own programmatic rules today
           .page-section__column
             .greeting-actions.wow.fadeInRight(data-wow-duration=".6s" data-wow-delay=".2s" style="visibility: hidden")
-              a(href="/sign-up.html").greeting-link.get-trial-link  Get free trial
+              a(href="/sign-up.html").greeting-link.get-trial-link  Get Free Trial
 
       section.page-section.page-section--features#features
         .page-section__inner
@@ -433,7 +436,7 @@ html(lang="ru")
 
                 li.select__item-formats(data-slide-format-index="5" data-format="popup")
                   .slider-key-formats__navigation-item
-                    | Popup
+                    | Pop-under
 
             .slider-key-formats__navigation.js-slider-key-formats-navigation
               .slider-key-formats__navigation-item(data-slide-format-index="0")
@@ -458,7 +461,7 @@ html(lang="ru")
 
               .slider-key-formats__navigation-item.slider-key-formats__navigation-item-last(data-slide-format-index="5")
                 .key-formats(role="button" tabindex="0")
-                  .key-format__title Popup
+                  .key-format__title Pop-under
 
             .slider-key-formats__viewport.js-slider-key-formats-viewport
               .slider-key-features__slide
@@ -467,7 +470,7 @@ html(lang="ru")
 
               .slider-key-formats__slide
                 .features__slide-wrapper
-                  img.features__image.features__image--intersial(src="img/gifs/interV2.gif" alt="Banner")
+                  img.features__image.features__image--intersial(src="img/gifs/inter.gif" alt="Banner")
 
               .slider-key-formats__slide
                 .features__slide-wrapper
@@ -514,14 +517,16 @@ html(lang="ru")
                 h4.section-list-title Lifelong support
                 p.section-list-description Platform setup assistance, full maintenance, free software&nbsp;updates.
           .page-section__column.page-section__column--fee
-            .fee-column.wow.fadeInRight(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden")
+            .fee-column.wow.fadeInRight(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden").cost
               p.section-label Flat fee
               p.section-title White-label DSP
               p.section-price $2000
+                sup *
               .actions
-                a(href="/sign-up.html").actions-link.get-trial-link  Get free trial
+                a(href="/sign-up.html").actions-link.get-trial-link  Get Free Trial
             .fee-column.wow.fadeInUp(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden")
-              picture
+            img.fee-illustration(src="img/dsp-landing/fee-illustration.svg" alt="Dashboard")
+              //- picture
                 source(srcset="img/dsp-landing/fee-illustration.webp 1x, img/dsp-landing/fee-illustration2x.webp 2x" type="image/webp")
                 source(srcset="img/dsp-landing/fee-illustration.png, img/dsp-landing/fee-illustration2x.png 2x" type="image/png")
                 img.fee-illustration(src="img/dsp-landing/fee-illustration.png" alt="Dashboard")
@@ -531,7 +536,7 @@ html(lang="ru")
           h2.page-section__title.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".4s" style="visibility: hidden") Epom white-label DSP: <br>robust, transparent, and infinitely YOURS
           p.page-section__description.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".5s" style="visibility: hidden") Try the platform today and bring your programmatic dream in-house tomorrow.
           .actions.wow.fadeInLeft(data-wow-duration=".6s" data-wow-delay=".6s" style="visibility: hidden")
-            a(href="/sign-up.html").actions-link.get-trial-link  Get free trial
+            a(href="/sign-up.html").actions-link.get-trial-link  Get Free Trial
           picture
             source(srcset="img/dsp-landing/caesar-illustration.webp 1x, img/dsp-landing/caesar-illustration2x.webp 2x" type="image/webp")
             source(srcset="img/dsp-landing/caesar-illustration.png, img/dsp-landing/caesar-illustration2x.png 2x" type="image/png")
